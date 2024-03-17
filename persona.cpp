@@ -88,5 +88,9 @@ void Cliente::mostrar(){
 		Empleado(string _nombres, string _apellidos, string _direccion, int _telefono, int _dia, int _mes, int _anio, int codigo_empleado, string puesto);
 		void mostrar();
 };
+//contructor getter
+Cliente::Cliente(string _nombres, string _apellidos, string _direccion, int _telefono, int _dia, int _mes, int _anio, int _nit ): Persona(_nombres,_apellidos,_direccion, _telefono, _dia, _mes,_anio ){
+	nit = _nit;
+};
 	return 0;
 }
