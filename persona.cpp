@@ -73,6 +73,20 @@ int main(){
 	//p2.actualizar();
 	//p3.borrar();
 	//p4.crear();
-	
+	//metodo de la clase Cliente (hija)
+void Cliente::mostrar(){
+	leer();
+	cout<<"nit"<<nit<<endl;
+}
+
+    //clase hijo empleado
+    class Empleado: public Persona{
+	private://atributos
+		int codigo_empleado;
+		string puesto;
+	public:
+		Empleado(string _nombres, string _apellidos, string _direccion, int _telefono, int _dia, int _mes, int _anio, int codigo_empleado, string puesto);
+		void mostrar();
+};
 	return 0;
 }
